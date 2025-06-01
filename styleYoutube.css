@@ -11,13 +11,12 @@ body {
   padding-top: 100px;  /* height of your nav + some spacing */
   margin-top: -100px;  /* negative same amount */
 }
-/* Navigation Bar */
+/* Navigation Bar Styling */
     nav {
         position: sticky;
         top: 0;
         display: flex;
         align-items: center;
-        padding: 20px 30px;
         background-image: url("universal/AIBackgroundPic.jpg");
         justify-content: space-between;
         background-size: 100%;
