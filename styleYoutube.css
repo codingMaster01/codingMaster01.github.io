@@ -227,6 +227,46 @@ body {
         border-left: 8px solid #0077cc;
     }
 
+    /* Style The Table */
+    .stats-entry table {
+        margin-bottom: 30px;
+        width: 900px;
+        margin-left: 40px;
+        border-collapse: collapse;
+        font-size: 25px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* Alternate Row Colors */
+    .stats-entry tr:nth-child(even) {
+        background-color: #6495ED;
+    }
+    .stats-entry tr:nth-child(odd) {
+        background-color: #4169E1;
+    }
+
+    /* Table Cells */
+    .stats-entry td {
+        padding: 25px 15px;
+        text-align: left;
+    }
+
+    /* Add Rounded Corners */
+    .stats-entry tr:first-child td:first-child {
+        border-top-left-radius: 15px;
+    }
+    .stats-entry tr:first-child td:last-child {
+        border-top-right-radius: 15px;
+    }
+    .stats-entry tr:last-child td:first-child {
+        border-bottom-left-radius: 15px;
+    }
+    .stats-entry tr:last-child td:last-child {
+        border-bottom-right-radius: 15px;
+    }
+
 /* Footer Styling */
     footer {
         background-image: url(universal/AIBackgroundPic.jpg);
