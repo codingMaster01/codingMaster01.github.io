@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GradeUpGuru </title>
+    <link rel = "stylesheet" href = "styleYoutube.css" />
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav> 
+        <img src = "universal/PersonalLogo.png" alt = "Logo" class = "logo" />
+        <ul>
+            <li class = "dropdown">
+                <a href = "index.html"> About Me </a>
+                <ul class = "dropdown-menu">
+                    <li><a href = "index.html#ambitions"> Ambitions </a></li>
+                    <li><a href = "index.html#experiences"> Experiences </a></li>
+                    <li><a href = "index.html#impact"> Impact </a></li>
+                    <li><a href = "index.html#quotes"> Inspiring Quotes </a></li>
+                </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "youtube.html"> YouTube Channel </a>
+                <ul class = "dropdown-menu">
+                    <li><a href = "youtube.html#purpose"> Purpose </a></li>
+                    <li><a href = "youtube.html#shorts"> Shorts </a></li>
+                    <li><a href = "youtube.html#videos"> Videos </a></li>
+                    <li><a href = "youtube.html#stats"> Statistics </a></li>
+                </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "projects.html"> Programming Projects </a>
+                <ul class = "dropdown-menu">
+                    <li><a href = "projects.html#snake"> Snake </a></li>
+                    <li><a href = "projects.html#UNO"> Automated UNO </a></li>
+                    <li><a href = "projects.html#connectfour"> Connect Four </a></li>
+                    <li><a href = "projects.html#pingpong"> Ping Pong </a></li>
+                    <li><a href = "projects.html#tictactoe"> Tic Tac Toe </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Intro-->
+    <div class="purpose-intro">
+        <div class="left-side">
+            <img src="imagesYT/banner.png" alt="banner">
+        </div>        
+        <div class="right-side">
+            <img src="imagesIndex/gradeupguru.jpg" alt="intro image">
+            
+            <svg viewBox="0 0 500 200" class="curved-text" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Curved text: GradeUpGuru">
+                <defs>
+                    <path id="curve" d="M 50 30 Q 250 170 450 30" fill="transparent"/>
+                </defs>
+                <text width="500">
+                    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                        GradeUpGuru
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </div>
+
+    <!--Section 1: Purpose-->
+    <section id = "purpose" class = "purpose-entry">
+        <div class = "text-image-container">
+        <h2>Purpose</h2>
+        <!--Embedded Video & Text-->
+        <div class = "content">
+            <iframe 
+                class = "videoEmbedding"
+                src = "https://www.youtube.com/embed/CHAPM5tC_Yg?si=o58L63-Yg8HrcRlI"
+                title = "Introduction Video"
+                frameborder = "0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <div class = "text">
+                <p>
+                Hello! Welcome to GradeUpGuru! You can find educational courses ranging from Algebra to Computer Science. Go ahead and explore! Find the course best fit for you! 
+                My goal with this website is to share my journey, passions, and projects—especially in AI and education—to inspire others and document my growth.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--YouTube API
+        KEY: AIzaSyAq0CDie8uFZxlpeXx27n3mEUrY5HbARDA
+    -->
+    <!--Section 2: Shorts-->
+    <section id = "shorts" class = "shorts-list">
+        <h2>Trending Shorts Currently</h2>
+        <div class = "shorts-entry">
+            <div id = "shorts-container"></div>
+            <script src = "apiUsers/fetchesshorts.js"></script>   
+        </div> 
+    </section>
+
+    <!--Section 3: Videos-->
+    <section id = "videos" class = "videos-list">
+        <h2>Trending Videos Currently</h2>
+        <div class = "videos-entry">
+            <div id = "videos-container"></div>
+            <script src = "apiUsers/fetchesvids.js"></script>   
+        </div> 
+    </section>
+
+    
+    <!--Section 4: Statistics-->
+    <section id = "stats" class = "stats-list">
+        <h2>Channel Statistics</h2>
+        <div class = "stats-entry">
+            <script src = "apiUsers/fetchesshorts.js"></script>   
+        </div> 
+    </section>
+
+    <!--Footer-->
+    <footer>
+    <strong>Email: hamza.ahmed07@gmail.com | Phone: 614-734-4290 </strong>
+    </footer> 
+</body>
+</html>

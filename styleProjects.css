@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: "Raleway", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2937, #3b82f6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+:target {
+  padding-top: 125px;  /* height of your nav + some spacing */
+  margin-top: -125px;  /* negative same amount */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar Styling */
+    nav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding: 20px 10px;
+        background-image: url("universal/AIBackgroundPic.jpg");
+        justify-content: space-between;
+        background-size: 100%;
+        background-position: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    nav .logo {
+        height: 80px;
+        margin-right: 40px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 1000;
+        font-size: 25px;
+        padding: 6px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Hover Effect */
+    nav ul li a:hover {
+        color: #93c5fd;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Drop Down List Styling */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(2, 2, 72, 0.85);
+        padding: 10px 0;
+        min-width: 180px;
+        border-radius: 6px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 10px 18px;
+        color: #f8fafc;
+        text-decoration: none;
+        font-size: 15.2px;
+        transition: background 0.3s, text-shadow 0.3s;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0, 0.6)
+    }
+
+    /* Hover Effect */
+    .dropdown-menu li a:hover {
+        background: rgba(255, 255, 255, 0.15);
+        color: #e0f2fe;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
+    }
+
+    /* To Show Drop Down */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+/* Intro */
+    .intro-section {
+        text-align: center;
+        padding: 0px 0px 00px 0px;
+        color: white;
+        font-family: "Segoe UI", sans-serif;
+        padding-bottom: 30px;
+    }
+
+    .intro-section h1 {
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        /* Gives Popping Effect */
+        text-shadow: 0 0 15px white;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Regulates The Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1)
+        }
+    }
+
+/* All Sections Formatted Similarly */
+    /* Specifies The Relative Location Of The Section */
+    .project-section {
+        margin-bottom: 50px;
+    }
+
+    /* Section Header */
+    .project-header {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: lightskyblue;
+        text-align: left;
+        padding-left: 20px;
+        border-left: 8px solid #0077cc;
+    }
+
+    /* Styles The Section */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+    }
+
+    /* Resizes & Styles The Image */
+    .project-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);;
+    }
+
+    /* Organizes The Right Side Of The Section */
+    .project-details {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    /* Styling & Formatting The Short Snippet Beside The Image */
+    .project-description {
+        text-align: left;
+        font-size: 25px;
+        color: lightskyblue;
+        line-height: 1.6;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+
+    /* Positioning The Buttons */
+    .project-buttons {
+        padding-left: 20px;
+        margin-top: 30px;
+    }
+
+    /* Styling & Formatting The Buttons */
+    .project-buttons a {
+        margin-right: 20px;
+        font-weight: 700;
+        font-size: 25px;
+        color: white;
+        padding: 10px 16px;
+        background-color: #93c5fd;
+        border-radius: 20px;
+        transition: background-color 0.2s;
+    }
+
+    .project-buttons a:hover {
+        background-color: #3b82f6;
+    }
+
+/* Footer Styling */
+    footer {
+        background-image: url(universal/AIBackgroundPic.jpg);
+        background-size: 100%;
+        background-position: center;
+        padding: 15px 0px;
+        text-align: center;
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 18px;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
+    }
