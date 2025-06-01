@@ -13,12 +13,11 @@ body {
 }
 /* Navigation Bar Styling */
     nav {
-        padding: 20px;
+        padding: 20px 10px;
         position: sticky;
         top: 0;
         display: flex;
         align-items: center;
-        padding: 20px 10px;
         background-image: url("universal/AIBackgroundPic.jpg");
         justify-content: space-between;
         background-size: 100%;
